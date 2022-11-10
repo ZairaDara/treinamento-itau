@@ -15,6 +15,22 @@ public class Funcionario {
         this.salarioBase = salarioBase;
     }
 
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSalarioBase(BigDecimal salarioBase) {
+        this.salarioBase = salarioBase;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
     public BigDecimal getSalarioBase() {
         return salarioBase;
     }
@@ -26,7 +42,6 @@ public class Funcionario {
         salarioDia = salarioBase.divide(new BigDecimal(30.0000),RoundingMode.UP);
 
         salarioPeriodo = salarioDia.multiply(new BigDecimal(NumDiasTrabalhados));
-
 
         return salarioPeriodo;
     }
