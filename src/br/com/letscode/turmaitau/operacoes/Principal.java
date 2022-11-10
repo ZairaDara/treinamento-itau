@@ -6,6 +6,10 @@ public class Principal {
     public static void main(String[] args) {
         //Realiza as minhas operações da calculadora - aciona as classes
 
+       Calculadora calculadora = new Dividir();
+
+       calculadora.realizarOperacao(4,2);
+
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite um numero:");
